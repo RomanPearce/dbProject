@@ -24,7 +24,7 @@ public class WorkDB {
                 + "block_status int(1),"
                 + "delete_status int(1))");
         DaoUsers du = new DaoUsers(db);
-        du.insert(new Users("user1", "1111", 1, 0, 0, 0));
+        du.insert(new Users("user1", "1111", 1, 10000, 0, 0));
         du.insert(new Users("user2", "2222", 1, 0, 0, 0));
         du.insert(new Users("admin", "1234", 0, 0, 0, 0));
         db.update("CREATE table goods ("

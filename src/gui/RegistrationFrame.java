@@ -57,9 +57,9 @@ public class RegistrationFrame extends JFrame{
                             JOptionPane.showMessageDialog(panel, "This user already exist", "ERROR", JOptionPane.ERROR_MESSAGE);
                         } else {
                             DaoUsers daoUser = new DaoUsers(db);
-                            daoUser.insert(new Users(tfLogin.getText(), tfPass.getText(), 0, 0, 0, 0));
+                            daoUser.insert(new Users(tfLogin.getText(), tfPass.getText(), 1, 0, 0, 0));
 
-                            JOptionPane.showMessageDialog(panel, "You have registred!", "YO", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(panel, "You have registred!", "YO", JOptionPane.INFORMATION_MESSAGE);
                             new LoginFrame(db);
                             dispose();
                         }

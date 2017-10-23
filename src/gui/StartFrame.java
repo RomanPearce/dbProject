@@ -18,7 +18,7 @@ public class StartFrame extends JFrame{
 
 
     public StartFrame(){
-        setSize(250, 230);
+        setSize(250, 250);
         setTitle("StartFrame");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
